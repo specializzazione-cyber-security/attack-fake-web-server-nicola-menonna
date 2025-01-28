@@ -1,0 +1,14 @@
+{
+    "name": "cyber-hackademy-aulab-attack-fake-web-server",
+    "version": "1.0.0",
+    "scripts": {
+        "start:api": "node server/api-server.js",
+        "start": "concurrently \"npm run start:web\" \"npm run start:api\""
+    },
+    "dependencies": {
+        "concurrently": "^8.2.2",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "express": "^4.21.2"
+    }
+}
